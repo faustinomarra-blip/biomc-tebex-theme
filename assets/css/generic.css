@@ -1,1 +1,38 @@
+:root{
+  --biomc-bg:#05070a;
+  --biomc-bg2:#0d1117;
+  --biomc-card:#131a24;
+  --biomc-border:#1f2937;
+  --biomc-cyan:#00e5ff;
+  --biomc-green:#37ff8b;
+  --biomc-text:#ffffff;
+  --biomc-muted:#b7c2d6;
+  --radius:18px;
+}
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:radial-gradient(circle at top,#0f1724 0%,#05070a 60%);
+  color:var(--biomc-text);
+  font-family:Inter,Arial,sans-serif;
+  min-height:100vh;
+}
+
+a{
+  color:var(--biomc-cyan);
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
