@@ -1,0 +1,46 @@
+<footer class="biomc-footer">
+
+    <div class="biomc-footer-container">
+
+        <div class="biomc-footer-brand">
+
+            <h3>{{ store.name }}</h3>
+
+            <p>
+                La tienda oficial del servidor BIOMC.
+            </p>
+
+        </div>
+
+        <div class="biomc-footer-links">
+
+            <a href="/">Inicio</a>
+            <a href="/category/packages">Tienda</a>
+            <a href="/contact">Soporte</a>
+            <a href="/terms">Términos</a>
+
+        </div>
+
+        <div class="biomc-footer-payments">
+
+            {% if gateways|length > 0 %}
+
+                {% for gateway in gateways %}
+
+                    <img src="{{ gateway.image }}" alt="{{ gateway.name }}">
+
+                {% endfor %}
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    <div class="biomc-footer-bottom">
+
+        © {{ "now"|date("Y") }} {{ store.name }} · Todos los derechos reservados.
+
+    </div>
+
+</footer>
